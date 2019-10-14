@@ -21,5 +21,10 @@ public string obtenhaStringDeConexao() {
   return stringDeConexao;
 }
 ```
-
 Observe que a nomenclatura do método já deixa claro o que ele se propõe a fazer.
+
+## Não repita as mesmas coisas!
+Geralmente em um projeto de software é comum utilizarmos a orientação a objetos para abstrair o mundo real e traduzí-lo para software. Então se queremos representar uma pessoa, criamos uma classe pessoa com seus atributos como: Nome, endereço, data de nascimento.
+Se queremos representar um professor, criamos uma classe professor e colocamos seus atributos. Mas espere! é aqui que alguns de nós caimos em uma cilada e começamos a repetir alguns atributos em comum! Torna-se necessário usarmos o conceito de abstração na orientação a objetos. Então teriamos uma classe abstrata pessoa e a classe professor herda de pessoa, já que professor é uma pessoa! veja que se surgir uma terceira classe chamada: Diretor, esta também tem atributos em comuns com pessoa, logo passa a herdar de pessoa.
+
+
